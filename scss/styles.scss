@@ -95,6 +95,7 @@ body {
    background: no-repeat 90% 50% / cover url("/images/hero.png");
    color: #fffff9;
    position: relative;
+   margin-bottom: 25px;
 }
 
 .portfolio-text {
@@ -115,8 +116,216 @@ body {
 }
 
 // ====================================================
+//                   MAIN CONTENT
+// ====================================================
+
+html {
+   scroll-behavior: smooth;
+}
+
+.main-content-wrapper {
+   // height: 100vh;
+   background-color: $primary-white;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   // border: 2px solid red;
+}
+
+#filter-btns-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   // border: 2px solid red;
+}
+
+.button-filter {
+   padding: 10px;
+   height: 45px;
+   width: 120px;
+   margin: 5px;
+}
+
+.button-filter:hover {
+   background-color: lightblue;
+}
+
+.project-potrtfolio-container {
+   // container for portfolio cards
+   margin-top: 25px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.project-card {
+   //   All portfolio Cards class
+   width: 320px;
+   margin: 5px 0;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.game-show {
+   // width: 500px;
+   border: 2px solid #dadada;
+   .card-header {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      background-color: $nav-bg;
+      // border: 2px solid red;
+   }
+   .card-image {
+      // Wheel of Success Card
+      // border: 2px solid red;
+      width: 100%;
+      height: 285px;
+      background-image: url("../images/gameshow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+.dashboard {
+   // width: 500px;
+   border: 2px solid #dadada;
+   .card-header {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      background-color: $nav-bg;
+      // border: 2px solid red;
+   }
+   .card-image {
+      // Wheel of Success Card
+      // border: 2px solid red;
+      width: 100%;
+      height: 285px;
+      background-image: url("../images/dashboard.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+.photogallery {
+   // width: 500px;
+   border: 2px solid #dadada;
+   .card-header {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      background-color: $nav-bg;
+      // border: 2px solid red;
+   }
+   .card-image {
+      // Wheel of Success Card
+      // border: 2px solid red;
+      width: 100%;
+      height: 285px;
+      background-image: url("../images/photogallery.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+.employeedirectory {
+   // width: 500px;
+   border: 2px solid #dadada;
+   .card-header {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      background-color: $nav-bg;
+      // border: 2px solid red;
+   }
+   .card-image {
+      // Wheel of Success Card
+      // border: 2px solid red;
+      width: 100%;
+      height: 285px;
+      background-image: url("../images/employee.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+.weather {
+   // width: 500px;
+   border: 2px solid #dadada;
+   .card-header {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      background-color: $nav-bg;
+      // border: 2px solid red;
+   }
+   .card-image {
+      // Wheel of Success Card
+      // border: 2px solid red;
+      width: 100%;
+      height: 285px;
+      background-image: url("../images/weather.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+.registration {
+   // width: 500px;
+   border: 2px solid #dadada;
+   .card-header {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white;
+      background-color: $nav-bg;
+      // border: 2px solid red;
+   }
+   .card-image {
+      // Wheel of Success Card
+      // border: 2px solid red;
+      width: 100%;
+      height: 285px;
+      background-image: url("../images/registration.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+// ====================================================
 //                   MEDIA QUERIES
 // ====================================================
+@media screen and (min-width: 655px) {
+   .project-card {
+      width: 400px;
+      margin: 5px;
+   }
+}
 
 @media screen and (min-width: 768px) {
    .nav-bar {
@@ -155,5 +364,10 @@ body {
       bottom: 120px;
       right: 50%;
       font-size: 1.8rem;
+   }
+
+   .project-card {
+      width: 500px;
+      margin: 5px;
    }
 }

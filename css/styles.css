@@ -78,6 +78,7 @@ body {
   background: no-repeat 90% 50%/cover url("/images/hero.png");
   color: #fffff9;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .portfolio-text {
@@ -97,6 +98,181 @@ body {
   letter-spacing: 1.21px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content-wrapper {
+  background-color: #f6f6ff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#filter-btns-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-filter {
+  padding: 10px;
+  height: 45px;
+  width: 120px;
+  margin: 5px;
+}
+
+.button-filter:hover {
+  background-color: lightblue;
+}
+
+.project-potrtfolio-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 320px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-show {
+  border: 2px solid #dadada;
+}
+.game-show .card-header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6ff;
+  background-color: #192e4a;
+}
+.game-show .card-image {
+  width: 100%;
+  height: 285px;
+  background-image: url("../images/gameshow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dashboard {
+  border: 2px solid #dadada;
+}
+.dashboard .card-header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6ff;
+  background-color: #192e4a;
+}
+.dashboard .card-image {
+  width: 100%;
+  height: 285px;
+  background-image: url("../images/dashboard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photogallery {
+  border: 2px solid #dadada;
+}
+.photogallery .card-header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6ff;
+  background-color: #192e4a;
+}
+.photogallery .card-image {
+  width: 100%;
+  height: 285px;
+  background-image: url("../images/photogallery.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.employeedirectory {
+  border: 2px solid #dadada;
+}
+.employeedirectory .card-header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6ff;
+  background-color: #192e4a;
+}
+.employeedirectory .card-image {
+  width: 100%;
+  height: 285px;
+  background-image: url("../images/employee.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather {
+  border: 2px solid #dadada;
+}
+.weather .card-header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6ff;
+  background-color: #192e4a;
+}
+.weather .card-image {
+  width: 100%;
+  height: 285px;
+  background-image: url("../images/weather.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.registration {
+  border: 2px solid #dadada;
+}
+.registration .card-header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6ff;
+  background-color: #192e4a;
+}
+.registration .card-image {
+  width: 100%;
+  height: 285px;
+  background-image: url("../images/registration.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 655px) {
+  .project-card {
+    width: 400px;
+    margin: 5px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav-bar {
     flex-direction: row;
@@ -134,6 +310,11 @@ body {
     bottom: 120px;
     right: 50%;
     font-size: 1.8rem;
+  }
+
+  .project-card {
+    width: 500px;
+    margin: 5px;
   }
 }
 
