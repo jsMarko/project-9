@@ -267,10 +267,73 @@ html {
   background-size: cover;
 }
 
+.social {
+  width: 25px;
+  margin: 2px;
+}
+
+.social-container {
+  width: 230px;
+}
+
+#emailModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+}
+
+.contactInfo-container {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid lightgrey;
+  padding-bottom: 10px;
+}
+
+.contactInfo-container .header {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #15213a;
+}
+
+.contactTitle {
+  color: #f6f6ff;
+}
+
+#contactInfo {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.info-btn {
+  padding: 10px 20px;
+}
+
+footer {
+  width: 100%;
+  height: 75px;
+  margin-top: 25px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #15213a;
+}
+
 @media screen and (min-width: 655px) {
   .project-card {
     width: 400px;
     margin: 5px;
+  }
+
+  .contactInfo-container {
+    width: 400px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -315,6 +378,16 @@ html {
   .project-card {
     width: 500px;
     margin: 5px;
+  }
+
+  .social-container {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contactInfo-container {
+    width: 500px;
   }
 }
 

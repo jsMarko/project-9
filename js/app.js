@@ -50,3 +50,17 @@ btnfilters.addEventListener("click", (e) => {
       }
    }
 });
+
+// Function for copy button for contact information
+const infoBtn = document.querySelector(".info-btn");
+
+infoBtn.addEventListener("click", () => {
+   let information = document.querySelector("#contactInfo").innerText;
+   let contact = document.querySelector(".contactInfo-container");
+   let el = document.createElement("textarea");
+   contact.appendChild(el);
+   el.value = information;
+   el.select();
+   document.execCommand("copy");
+   contact.removeChild(el);
+});
