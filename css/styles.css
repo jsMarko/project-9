@@ -149,7 +149,7 @@ html {
   height: 55px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #f6f6ff;
   background-color: #192e4a;
