@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Prata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap");
 * {
@@ -148,12 +149,13 @@ html {
   height: 55px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #f6f6ff;
   background-color: #192e4a;
 }
 .game-show .card-image {
+  position: relative;
   width: 100%;
   height: 285px;
   background-image: url("../images/gameshow.png");
@@ -315,7 +317,43 @@ html {
   padding: 10px 20px;
 }
 
-footer {
+.skills-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-icons:hover {
+  transform: scale(1.4);
+}
+
+.html {
+  width: 75px;
+}
+
+.css {
+  width: 53px;
+}
+
+.js {
+  width: 62px;
+}
+
+.react {
+  width: 105px;
+}
+
+.code,
+.demo {
+  background-color: #476ec3;
+  color: #f6f6ff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+≈ footer {
   width: 100%;
   height: 75px;
   margin-top: 25px;

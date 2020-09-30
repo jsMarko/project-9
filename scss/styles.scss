@@ -173,7 +173,7 @@ html {
       height: 55px;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       color: $primary-white;
       background-color: $nav-bg;
@@ -182,6 +182,7 @@ html {
    .card-image {
       // Wheel of Success Card
       // border: 2px solid red;
+      position: relative;
       width: 100%;
       height: 285px;
       background-image: url("../images/gameshow.png");
@@ -365,7 +366,43 @@ html {
    padding: 10px 20px;
 }
 
-footer {
+.skills-container {
+   margin: 20px 0;
+   display: flex;
+   justify-content: space-around;
+}
+
+.skills-icons:hover {
+   transform: scale(1.4);
+}
+
+.html {
+   width: 75px;
+}
+
+.css {
+   width: 53px;
+}
+
+.js {
+   width: 62px;
+}
+
+.react {
+   width: 105px;
+}
+
+.code,
+.demo {
+   background-color: #476ec3;
+   color: $primary-white;
+   padding: 10px 20px;
+   text-decoration: none;
+   margin-left: 10px;
+   margin-bottom: 5px;
+}
+
+≈ footer {
    width: 100%;
    height: 75px;
    margin-top: 25px;
